@@ -1,0 +1,62 @@
+{% extends "index.html" %}
+
+{% block content%}
+<!-- Masthead-->
+<header class="masthead">
+    <script src="\static\js\scripts.js"></script>
+    <video src="static\assets\img\Beach.mp4" muted loop autoplay></video>
+    <div class="container position-relative"> 
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <div class="text-center text-white">
+                    <!-- Page heading-->
+                    <h1 class="mb-5">Hi There I am SleepBot!</h1>
+                    <h5 class="mb-4">I can help you answer any questions that you may have about Sleep Apnea :)</h5>
+                    <!-- Signup form-->
+                    <button class="btn btn-primary" id="button-submit" type="button" onclick="count()">Ask Question!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Image Showcases-->
+<section class="showcase">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('/static/assets/img/bg-showcase-1.jpg')"></div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                <h2>About Sleep Apnea</h2>
+                <p class="lead mb-0">Sleep apnea is a potentially serious sleep disorder in which breathing repeatedly stops and starts. If you snore loudly and feel tired even after a full night's sleep, you might have sleep apnea. The main types of sleep apnea are: Obstructive sleep apnea, the more common form that occurs when throat muscles relax</p>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-lg-6 text-white showcase-img" style="background-image: url('/static/assets/img/bg-showcase-2.jpg')"></div>
+            <div class="col-lg-6 my-auto showcase-text">
+                <h2>Tips and Tricks</h2>
+                <p class="lead mb-0">The blue light emitted by your cell phone screen restrains the production of melatonin, the hormone that controls your sleep-wake cycle (aka circadian rhythm). This makes it even more difficult to fall asleep and wake up the next day</p>
+                <a class="lead mb-0" href="/test">Recommendations here...</a>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('/static/assets/img/bg-showcase-3.jpg')"></div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                <h2>Financial Information</h2>
+                <p class="lead mb-0"> Worried about surgery costs or any other financial related issues? Feel free to checkout relevant credible articles that will link you up with the right people</p>
+                <a class="lead mb-0" href="/finance">Financial queries here...</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Call to Action-->
+<section class="call-to-action text-white text-center" id="signup">
+    <video src="static\assets\img\Beach.mp4" muted loop autoplay></video>
+    <div class="container position-relative">
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <h2 class="mb-4"> A good Night's sleep prepares you for a good Day's work</h2>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
